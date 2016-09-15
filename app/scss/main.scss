@@ -1,0 +1,200 @@
+@import 'variables';
+@import "../../node_modules/normalize-scss/sass/normalize/import-now";
+
+body {
+  background: $background;
+}
+
+.login {
+  width: 385px;
+  margin: 25vh auto 0 auto;
+  text-align: center;
+  padding: 40px 0;
+  h2 {
+    font-size: 3rem;
+    margin: 0 0 10px 0;
+  }
+  input {
+    margin: 0 auto;
+    width: 60%;
+    display: block;
+    line-height: 2rem;
+    padding-left: 1%;
+    margin-bottom: 10px;
+  }
+  a {
+    text-decoration: none;
+    font-size: 0.8rem;
+  }
+}
+
+input:focus {
+  outline: 0;
+}
+
+.login-form {
+  input[type="submit"] {
+    border: 0;
+    background: $accent;
+    width: 62%;
+  }
+  p {
+    color: $accent;
+    font-size: 0.8rem;
+  }
+}
+
+.register {
+  margin-top: 3vh;
+  select {
+    width: 62%;
+    border: 0;
+    margin-bottom: 12px;
+    border-radius: 0;
+    -webkit-appearance: none;
+    border: 1px solid #ccc;
+    background: transparent;
+    height: 38px;
+    padding-left: 1%;
+    color: #aeabab;
+    &:focus {
+      outline: 0;
+    }
+  }
+}
+
+nav {
+  background: #fff;
+  a {
+    text-decoration: none;
+  }
+}
+
+#navigation {
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+  padding: 0;
+  line-height: 4rem;
+  li {
+    display: inline-block;
+    list-style-type: none;
+    float: right;
+    margin-right: 1%;
+  }
+}
+
+aside {
+    width: 25%;
+    background: $accent;
+    height: 120vh;
+    float: left;
+    h3 {
+      margin: 0;
+      padding: 15px 0 15px 4%;
+      font-size: 2rem;
+    }
+}
+
+#post-list {
+  margin: 0;
+  padding: 0;
+  li:first-child {
+    margin: 0;
+  }
+  li {
+    padding-left: 4%;
+    line-height: 2.5rem;
+    margin-top: 5px;
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    &:hover {
+      background: #fff;
+    }
+  }
+}
+
+.individual-post {
+  width: 75%;
+  float: left;
+  padding: 0 2%;
+  box-sizing: border-box;
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+  }
+}
+
+.post-meta-data {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 0.8rem;
+    i {
+      font-size: 0.7rem;
+    }
+  }
+}
+
+.post-content {
+  margin: 20px 0;
+}
+
+.new-post-form {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  input[type="submit"] {
+    border: 0;
+    background: $accent;
+    width: 35%;
+    margin-top: 10px;
+    float: right;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+button {
+  float: left;
+  background: transparent;
+  border: 1px solid #ccc;
+  a {
+    text-decoration: none;
+    color: $accent;
+  }
+  &:focus {
+    outline: 0;
+  }
+}
+
+.new-post-title {
+  width: 60%;
+  display: block;
+  padding-left: 1%;
+  margin-bottom: 10px;
+  border: 0;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  height: 350px;
+  overflow: scroll;
+  padding-left: 1%;
+  border: 0;
+  &:focus {
+    outline: none;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .new-post-form {
+    width: 70%;
+  }
+}
